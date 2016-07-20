@@ -1,0 +1,94 @@
+@import "./lib/base";
+
+html, body{
+  height: 100%;
+  font-size: 14px;
+}
+
+
+.main{
+  height:100%;
+  nav{
+    width: 90px;
+    height: 100%;
+    background: #eee;
+    .pull-left;
+    overflow: auto;
+    // .hidden;
+    ul{
+      li{
+        line-height: 40px;
+        text-align: center;
+        &.active{
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  .goods{
+    .ml(90px);
+    overflow: auto;
+    height: 100%;
+    .item-box{
+      header{
+        background: #eee;
+        padding: 0 10px;
+        line-height: 20px;
+      }
+      ul{
+        padding: 0 10px;
+        li{
+          border-bottom: 1px solid #eee;
+          padding: 10px 0;
+          .clearfix;
+          .rel;
+
+          .img-box{
+            .rect(100px);
+            background: #eee;
+            border-radius: 3px;
+            overflow: hidden;
+            .pull-left;
+          }
+          .summary{
+            .ml(110px);
+            .rel;
+            .top{
+              height: 70px;
+            }
+            h2{
+              font-size: 16px;
+            }
+            p{
+              color: #999;
+            }
+
+            .price{
+              font-size: 10px;
+              color: #f90;
+              .mr(10px);
+              em{
+                font-size: 24px;
+              }
+            }
+            .spec{
+              color: #999;
+            }
+
+            .btn-add{
+              .rect(30px);
+              border-radius: 15px;
+              border:1px solid #ccc;
+              font-size: 30px;
+              color: #f90;
+              background: #fff;
+              background: url(../images/ico-plus.png);
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

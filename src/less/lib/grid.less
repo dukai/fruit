@@ -1,0 +1,57 @@
+@import "base";
+.genGrid(@n: 12) when(@n > 0){
+
+    .col-@{n}{
+        width: percentage(@n/12);
+        float: left;
+        .border-box;
+    }
+
+    .genGrid(@n - 1);
+}
+
+.genGrid(12);
+
+
+.sizing(@n: 20) when(@n > 0){
+
+    @name:@n*5;
+
+    .mr@{name}{
+        .mr(@n*5px);
+    }
+    .ml@{name}{
+        .ml(@n*5px);
+    }
+    .mt@{name}{
+        .mt(@n*5px);
+    }
+    .mb@{name}{
+        .mb(@n*5px);
+    }
+
+    .pr@{name}{
+        .pr(@n*5px);
+    }
+    .pl@{name}{
+        .pl(@n*5px);
+    }
+    .pt@{name}{
+        .pt(@n*5px);
+    }
+    .pb@{name}{
+        .pb(@n*5px);
+    }
+
+    .sizing(@n - 1);
+}
+
+.sizing(20);
+
+.row{
+    &:after{
+        display: table;
+        content: ' ';
+        clear: both;
+    }
+}

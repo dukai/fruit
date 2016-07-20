@@ -1,0 +1,47 @@
+{
+  "name": "fruit",
+  "title": "Fruit",
+  "description": "Frontend project",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dukai/fruit",
+  "author": {
+    "name": "Kyle",
+    "email": "dukai86@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dukai@github.com/dukai/fruit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dukai/fruit/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dukai/fruit/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": "4.4.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bust-requirejs-cache": "^0.3.2",
+    "grunt-cache-bust-alt": "^0.6.1",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express-server": "^0.5.2",
+    "grunt-inline-text": "^0.1.2",
+    "grunt-replace": "^0.10.2",
+    "grunt-source-map": "git+https://github.com/dukai/grunt-source-map.git",
+    "bluebird": "^3.3.5",
+    "express": "^4.13.4",
+    "velocity": "^0.7.2",
+    "express-velocity-engine": "git+https://github.com/dukai/express-velocity-engine.git"
+  },
+  "keywords": []
+}

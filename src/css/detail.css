@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  border: 0;
+}
+body .box {
+  width: 100px;
+  height: 100px;
+  background: #ff0000;
+  position: relative;
+}
+.box.red {
+  background: #f00;
+  position: relative;
+}
+.bg {
+  background: url("../images/2.jpg");
+}

@@ -1,0 +1,12 @@
+{
+  "name": "fruit",
+  "description": "Frontend project",
+  "homepage": "https://github.com/dukai/fruit",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dukai/fruit/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {}
+}
