@@ -12,15 +12,15 @@
   <section class="main">
     <nav>
       <ul>
-        <li class="active">礼盒套餐</li>
-        <li>奇异果</li>
+        <li class="package active">礼盒套餐</li>
+        <li class="qiyi">奇异果</li>
         <li>樱桃</li>
         <li>橙子</li>
         <li>苹果</li>
       </ul>
     </nav>
     <div class="goods clearfix">
-      <div class="item-box">
+      <div class="item-box" data-target="package">
         <header>礼盒套餐</header>
         <ul>
           <li>
@@ -142,7 +142,7 @@
           </li>
         </ul>
       </div>
-      <div class="item-box">
+      <div class="item-box" data-target="qiyi">
         <header>奇异果</header>
         <ul>
           <li>
@@ -266,6 +266,8 @@
       </div>
     </div>
   </section>
+
+  <div class="btn cart"></div>
   <script src="../js/lib/require.js" data-main="../js/rs-config"></script>
   <script>
     require(['rs-config'], function(){

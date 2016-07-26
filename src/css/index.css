@@ -231,3 +231,17 @@ body {
   background: url(../images/ico-plus.png);
   background-size: cover;
 }
+.btn.cart {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: url(../images/ico-cart.png) center center no-repeat;
+  background-size: 30px;
+  background-color: #f90;
+  border-radius: 25px;
+}
+.btn.cart.full {
+  background: url(../images/ico-cart-full.png);
+}

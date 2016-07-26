@@ -1,15 +1,15 @@
 requirejs.config({
     baseUrl: '../js',
     paths: {
-        // jquery: 'lib/jquery-2.1.4.min',
-        // text: 'lib/text',
-        // moment: 'lib/moment.min',
+        jquery: 'lib/jquery-1.11.3.min',
+        text: 'lib/text',
+        moment: 'lib/moment.min',
         'app/static-config': 'rs-config'
     },
     shim: {
-    	// 'comp/datetimepicker/jquery.datetimepicker': {
-    	// 	deps: ['jquery']
-    	// },
+    	'lib/jquery-scrollspy': {
+    		deps: ['jquery']
+    	},
      //    'lib/swiper/swiper.jquery.min': {
      //        deps: ['jquery'],
      //        exports: 'Swiper'
