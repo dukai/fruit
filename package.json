@@ -25,6 +25,9 @@
     "node": "4.4.5"
   },
   "devDependencies": {
+    "bluebird": "^3.3.5",
+    "express": "^4.13.4",
+    "express-velocity-engine": "git+https://github.com/dukai/express-velocity-engine.git",
     "grunt": "^0.4.5",
     "grunt-bust-requirejs-cache": "^0.3.2",
     "grunt-cache-bust-alt": "^0.6.1",
@@ -36,12 +39,10 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express-server": "^0.5.2",
     "grunt-inline-text": "^0.1.2",
+    "grunt-light-sprite": "^0.1.5",
     "grunt-replace": "^0.10.2",
     "grunt-source-map": "git+https://github.com/dukai/grunt-source-map.git",
-    "bluebird": "^3.3.5",
-    "express": "^4.13.4",
-    "velocity": "^0.7.2",
-    "express-velocity-engine": "git+https://github.com/dukai/express-velocity-engine.git"
+    "velocity": "^0.7.2"
   },
   "keywords": []
 }

@@ -1,8 +1,97 @@
-@import "./lib/base";
+@import "global";
 
 html, body{
   height: 100%;
   font-size: 14px;
+  background: #f1f1f1;
+}
+
+
+.box{
+  padding: 10px;
+  .border-box;
+}
+
+.fs-lg{
+  font-size: 24px;
+}
+
+.txt-warn{
+  color: #f90;
+}
+
+.btn{
+  .d-ib;
+  .border-box;
+  padding: 0;
+  vertical-align: middle;
+  &.btn-block{
+    .d-b;
+    width: 100%;
+  }
+
+  &.btn-primary{
+    height: 40px;
+    .border-box;
+    font-size: 16px;
+    background: #f90;
+    color: #fff;
+    border:0;
+  }
+
+  &.btn-add{
+    .rect(30px);
+    border-radius: 15px;
+    border:1px solid #ccc;
+    font-size: 30px;
+    color: #f90;
+    background: #fff;
+    background: url(../images/ico-plus.png);
+    background-size: cover;
+    outline: none;
+  }
+  &.btn-minus{
+    .rect(30px);
+    border-radius: 15px;
+    border:1px solid #ccc;
+    font-size: 30px;
+    color: #f90;
+    background: #fff;
+    background: url(../images/ico-minus.png);
+    background-size: cover;
+    outline: none;
+  }
+}
+
+
+.ico{
+  .d-ib;
+  vertical-align: middle;
+  &.ico-checkbox{
+    .rect(20px);
+    .d-ib;
+    // background: #f90;
+    border-radius: 10px;
+    border:1px solid #ccc;
+    &.active{
+      border-color: #f90;
+    }
+  }
+  &.ico-arrow{
+    .rect(16px);
+    background: url(../images/ico-arrow-right.png);
+    background-size: cover;
+  }
+}
+
+.counter{
+  line-height: 30px;
+  span{
+    font-size: 16px;
+    color: #999;
+    .d-ib;
+    vertical-align: middle;
+  }
 }
 
 
@@ -27,22 +116,35 @@ html, body{
   }
 
   .goods{
-    .ml(90px);
     overflow: auto;
     height: 100%;
     .item-box{
       header{
         background: #eee;
         padding: 0 10px;
-        line-height: 20px;
+        line-height: 30px;
       }
       ul{
         padding: 0 10px;
+        background: #fff;
         li{
           border-bottom: 1px solid #eee;
-          padding: 10px 0;
+          .border-box;
+          padding: 14px 0;
+          line-height: 24px;
           .clearfix;
           .rel;
+
+          &:nth-last-child(1){
+            border-bottom: 0;
+          }
+
+          .checkbox{
+            width: 30px;
+            height: 100px;
+            .pull-left;
+            line-height: 100px;
+          }
 
           .img-box{
             .rect(100px);
@@ -50,9 +152,9 @@ html, body{
             border-radius: 3px;
             overflow: hidden;
             .pull-left;
+            .mr(10px);
           }
           .summary{
-            .ml(110px);
             .rel;
             .top{
               height: 70px;
@@ -76,16 +178,7 @@ html, body{
               color: #999;
             }
 
-            .btn-add{
-              .rect(30px);
-              border-radius: 15px;
-              border:1px solid #ccc;
-              font-size: 30px;
-              color: #f90;
-              background: #fff;
-              background: url(../images/ico-plus.png);
-              background-size: cover;
-            }
+            
           }
         }
       }
@@ -105,5 +198,62 @@ html, body{
   border-radius: 25px;
   &.full{
     background: url(../images/ico-cart-full.png);
+  }
+}
+
+
+.check-bar{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  line-height: 50px;
+
+  .info{
+    .d-b;
+    vertical-align: middle;
+    line-height: 50px;
+    height: 50px;
+    .pull-left;
+  }
+  button{
+    height: 50px;
+    background: #f90;
+    color: #fff;
+    border:0;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 30px;
+    outline: none;
+    display: block;
+    .pull-left;
+  }
+}
+
+.item-list{
+  ul{
+    li{
+      .clearfix;
+    }
+  }
+  .name{
+    .pull-left;
+    color: #333;
+    font-size: 15px;
+  }
+  .pointer{
+    .pull-right;
+    color: #999;
+    input[type="text"]{
+      height: 24px;
+      .border-box;
+      border:0;
+      text-align: right;
+      outline: none;
+    }
   }
 }

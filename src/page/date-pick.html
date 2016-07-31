@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Hello world!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" href="../css/global.css" type="text/css">
+  <link rel="stylesheet" href="../css/index.css" type="text/css">
+</head>
+<body>
+  <section class="main">
+    <div class="goods clearfix ">
+      <div class="item-box" data-target="package">
+        <header>选择地址</header>
+        <div class="item-list">
+          <ul>
+            <li>
+              <label class="name">周一（2016-08-01）</label>
+              <span class="pointer"> <span>09:00-18:00</span> <i class="ico ico-arrow"></i> </span>
+            </li>
+            <li>
+              <label class="name">周二（2016-08-02）</label>
+              <span class="pointer"> <span>09:00-18:00</span> <i class="ico ico-arrow"></i> </span>
+            </li>
+            <li>
+              <label class="name">周三（2016-08-03）</label>
+              <span class="pointer"> <span>09:00-18:00</span> <i class="ico ico-arrow"></i> </span>
+            </li>
+            <li>
+              <label class="name">周四（2016-08-04）</label>
+              <span class="pointer"> <span>09:00-18:00</span> <i class="ico ico-arrow"></i> </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="../js/lib/require.js" data-main="../js/rs-config"></script>
+  <script>
+    require(['rs-config'], function(){
+      require(['jquery', 'app/page-main'], function($){
+        console.log($('body'));
+      });
+    })
+  </script>
+</body>
+</html>
