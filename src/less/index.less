@@ -4,6 +4,8 @@ html, body{
   height: 100%;
   font-size: 14px;
   background: #f1f1f1;
+  color: #666;
+  font-family: helvetica;
 }
 
 
@@ -41,25 +43,27 @@ html, body{
 
   &.btn-add{
     .rect(30px);
-    border-radius: 15px;
+    border-radius: 3px;
     border:1px solid #ccc;
-    font-size: 30px;
-    color: #f90;
+    color: #390;
     background: #fff;
-    background: url(../images/ico-plus.png);
+    // background: url(../images/ico-plus.png);
     background-size: cover;
     outline: none;
+    vertical-align: middle;
+    line-height: 28px;
   }
   &.btn-minus{
     .rect(30px);
-    border-radius: 15px;
+    border-radius: 3px;
     border:1px solid #ccc;
-    font-size: 30px;
-    color: #f90;
+    color: #390;
     background: #fff;
-    background: url(../images/ico-minus.png);
+    // background: url(../images/ico-plus.png);
     background-size: cover;
     outline: none;
+    vertical-align: middle;
+    line-height: 28px;
   }
 }
 
@@ -100,16 +104,26 @@ html, body{
   nav{
     width: 90px;
     height: 100%;
-    background: #eee;
+    background: #f7f7f7;
     .pull-left;
     overflow: auto;
     // .hidden;
     ul{
       li{
-        line-height: 40px;
+        line-height: 50px;
         text-align: center;
+        a{
+          color: #666;
+          text-decoration: none;
+          .d-b;
+        }
         &.active{
           background: #fff;
+          border-left: 2px solid #33cc00;
+          color: #390;
+          a{
+            color: #390;
+          }
         }
       }
     }
@@ -120,9 +134,14 @@ html, body{
     height: 100%;
     .item-box{
       header{
-        background: #eee;
+        background: #f7f7f7;
         padding: 0 10px;
         line-height: 30px;
+        color: #999;
+        a{
+          .d-b;
+          line-height: 30px;
+        }
       }
       ul{
         padding: 0 10px;
@@ -153,6 +172,11 @@ html, body{
             overflow: hidden;
             .pull-left;
             .mr(10px);
+            box-shadow: 0 0 10px #ddd;
+            img{
+              .d-b;
+              .rect(100px);
+            }
           }
           .summary{
             .rel;
@@ -168,7 +192,7 @@ html, body{
 
             .price{
               font-size: 10px;
-              color: #f90;
+              color: #f00;
               .mr(10px);
               em{
                 font-size: 24px;
@@ -254,6 +278,58 @@ html, body{
       border:0;
       text-align: right;
       outline: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+.tab-bar{
+  .rect(100%, 50px);
+  background: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  ul{
+    li{
+      width: percentage(1/3);
+      .pull-left;
+      text-align: center;
+      &.active{
+        color: #390;
+      }
+      .icon{
+        text-align: center;
+        .d-ib;
+        .rel;
+        .pt(6px);
+        i{
+          font-size: 24px;
+        }
+
+        .badge{
+          .abs;
+          .d-ib;
+          min-width: 12px;
+          right: -4px;
+          top: 0;
+          background: #fe4b47;
+          color: #fff;
+          font-size: 10px;
+          line-height: 16px;
+          border-radius: 8px;
+          padding: 0 2px;
+        }
+      }
+      .txt{
+        text-align: center;
+        font-size: 12px;
+      }
     }
   }
 }

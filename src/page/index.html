@@ -12,16 +12,137 @@
   <section class="main">
     <nav>
       <ul>
-        <li class="package active">礼盒套餐</li>
-        <li class="qiyi">奇异果</li>
-        <li>樱桃</li>
+        <li class="package active"><a href="#package">礼盒套餐</a></li>
+        <li class="qiyi"><a href="#qiyi">奇异果</a></li>
+        <li class="cherry"><a href="#cherry">樱桃</a></li>
         <li>橙子</li>
         <li>苹果</li>
       </ul>
     </nav>
     <div class="goods clearfix ml90">
       <div class="item-box" data-target="package">
-        <header>礼盒套餐</header>
+        <header><a name="package">礼盒套餐</a></header>
+        <ul>
+          <li>
+            <div class="img-box">
+              <img src="../images/products/qiyi.jpg">
+            </div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+
+                  <span class="spec">1斤</span>
+                </div>
+                <div class="pull-right">
+                  <button class="btn btn-add" data-pid="xxxx1">
+                    <i class="iconfont icon-jiahao"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box"><img src="../images/products/orange.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的橙子哦，不甜不要钱</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <button class="btn btn-add" data-pid="xxxx2">
+                    <i class="iconfont icon-jiahao"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <button class="btn btn-add"> </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <button class="btn btn-add"> </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <button class="btn btn-add"> </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <button class="btn btn-add"> </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="item-box" name="qiyi" data-target="qiyi">
+        <header><a name="qiyi">奇异果</a></header>
         <ul>
           <li>
               <div class="img-box"></div>
@@ -142,8 +263,8 @@
           </li>
         </ul>
       </div>
-      <div class="item-box" data-target="qiyi">
-        <header>奇异果</header>
+      <div class="item-box" name="cherry" data-target="cherry">
+        <header><a name="cherry">樱桃</a></header>
         <ul>
           <li>
               <div class="img-box"></div>
@@ -267,12 +388,32 @@
     </div>
   </section>
 
-  <div class="btn cart"></div>
+  <div class="tab-bar">
+    <ul>
+      <li class="active">
+        <div class="icon">
+          <i class="iconfont icon-shouye"></i>
+        </div>
+        <div class="txt">首页</div>
+      </li>
+      <li>
+        <div class="icon">
+          <i class="iconfont icon-gouwuche"></i>
+          <span class="badge">0</span>
+        </div>
+        <div class="txt">购物车</div>
+      </li>
+      <li>
+        <div class="icon"><i class="iconfont icon-yonghu"></i></div>
+        <div class="txt">我的</div>
+      </li>
+    </ul>
+  </div>
+
   <script src="../js/lib/require.js" data-main="../js/rs-config"></script>
   <script>
     require(['rs-config'], function(){
       require(['jquery', 'app/page-main'], function($){
-        console.log($('body'));
       });
     })
   </script>

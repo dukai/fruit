@@ -4,6 +4,7 @@ Copyright 2014 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 http://yuilibrary.com/license/
 */
+@import "../fonts/iconfont.css";
 html {
   color: #000;
   background: #FFF;
@@ -710,6 +711,8 @@ body {
   height: 100%;
   font-size: 14px;
   background: #f1f1f1;
+  color: #666;
+  font-family: helvetica;
 }
 .box {
   padding: 10px;
@@ -750,26 +753,26 @@ body {
 .btn.btn-add {
   width: 30px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 3px;
   border: 1px solid #ccc;
-  font-size: 30px;
-  color: #f90;
+  color: #390;
   background: #fff;
-  background: url(../images/ico-plus.png);
   background-size: cover;
   outline: none;
+  vertical-align: middle;
+  line-height: 28px;
 }
 .btn.btn-minus {
   width: 30px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 3px;
   border: 1px solid #ccc;
-  font-size: 30px;
-  color: #f90;
+  color: #390;
   background: #fff;
-  background: url(../images/ico-minus.png);
   background-size: cover;
   outline: none;
+  vertical-align: middle;
+  line-height: 28px;
 }
 .ico {
   *display: inline;
@@ -812,24 +815,39 @@ body {
 .main nav {
   width: 90px;
   height: 100%;
-  background: #eee;
+  background: #f7f7f7;
   float: left;
   overflow: auto;
 }
 .main nav ul li {
-  line-height: 40px;
+  line-height: 50px;
   text-align: center;
+}
+.main nav ul li a {
+  color: #666;
+  text-decoration: none;
+  display: block;
 }
 .main nav ul li.active {
   background: #fff;
+  border-left: 2px solid #33cc00;
+  color: #390;
+}
+.main nav ul li.active a {
+  color: #390;
 }
 .main .goods {
   overflow: auto;
   height: 100%;
 }
 .main .goods .item-box header {
-  background: #eee;
+  background: #f7f7f7;
   padding: 0 10px;
+  line-height: 30px;
+  color: #999;
+}
+.main .goods .item-box header a {
+  display: block;
   line-height: 30px;
 }
 .main .goods .item-box ul {
@@ -874,6 +892,12 @@ body {
   overflow: hidden;
   float: left;
   margin-right: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+.main .goods .item-box ul li .img-box img {
+  display: block;
+  width: 100px;
+  height: 100px;
 }
 .main .goods .item-box ul li .summary {
   position: relative;
@@ -889,7 +913,7 @@ body {
 }
 .main .goods .item-box ul li .summary .price {
   font-size: 10px;
-  color: #f90;
+  color: #f00;
   margin-right: 10px;
 }
 .main .goods .item-box ul li .summary .price em {
@@ -973,4 +997,51 @@ body {
   border: 0;
   text-align: right;
   outline: none;
+}
+.tab-bar {
+  width: 100%;
+  height: 50px;
+  background: #f7f7f7;
+  border-top: 1px solid #e5e5e5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.tab-bar ul li {
+  width: 33.33333333%;
+  float: left;
+  text-align: center;
+}
+.tab-bar ul li.active {
+  color: #390;
+}
+.tab-bar ul li .icon {
+  text-align: center;
+  *display: inline;
+  zoom: 1;
+  display: inline-block;
+  position: relative;
+  padding-top: 6px;
+}
+.tab-bar ul li .icon i {
+  font-size: 24px;
+}
+.tab-bar ul li .icon .badge {
+  position: absolute;
+  *display: inline;
+  zoom: 1;
+  display: inline-block;
+  min-width: 12px;
+  right: -4px;
+  top: 0;
+  background: #fe4b47;
+  color: #fff;
+  font-size: 10px;
+  line-height: 16px;
+  border-radius: 8px;
+  padding: 0 2px;
+}
+.tab-bar ul li .txt {
+  text-align: center;
+  font-size: 12px;
 }
