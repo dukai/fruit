@@ -1,6 +1,8 @@
 define(function(require, exports, module){
 	require('lib/jquery-scrollspy');
 
+	var $ = require('jquery');
+
 	$('.goods .item-box').each(function(){
 		var position = $(this).position();
 		// console.log(position);

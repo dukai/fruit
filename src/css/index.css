@@ -822,6 +822,7 @@ body {
 .main nav ul li {
   line-height: 50px;
   text-align: center;
+  border-left: 2px solid transparent;
 }
 .main nav ul li a {
   color: #666;
