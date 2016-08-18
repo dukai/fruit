@@ -791,6 +791,7 @@ body {
 }
 .ico.ico-checkbox.active {
   border-color: #f90;
+  background-color: #f90;
 }
 .ico.ico-arrow {
   width: 16px;
@@ -902,6 +903,7 @@ body {
 }
 .main .goods .item-box ul li .summary {
   position: relative;
+  margin-left: 100px;
 }
 .main .goods .item-box ul li .summary .top {
   height: 70px;
@@ -1045,4 +1047,11 @@ body {
 .tab-bar ul li .txt {
   text-align: center;
   font-size: 12px;
+}
+label.checkbox .ico {
+  font-size: 20px;
+  color: #999;
+}
+label.checkbox.active .ico {
+  color: #f90;
 }

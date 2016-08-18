@@ -16,8 +16,8 @@
         <ul>
           <li>
             <div class="checkbox">
-              <label>
-                <i class="ico ico-checkbox"></i>
+              <label class="checkbox" data-pid="xxxx1">
+                <i class="ico iconfont icon-yuanxingweixuanzhong"></i>
               </label>
             </div>
             <div class="img-box"></div>
@@ -43,8 +43,8 @@
           </li>
           <li>
             <div class="checkbox">
-              <label>
-                <i class="ico ico-checkbox"></i>
+              <label class="checkbox" data-pid="xxxx2">
+                <i class="ico iconfont icon-yuanxingweixuanzhong"></i>
               </label>
             </div>
             <div class="img-box"></div>
@@ -75,8 +75,8 @@
 
   <div class="check-bar">
     <div class="pull-left ml15">
-      <label>
-        <i class="ico ico-checkbox"></i> 全选
+      <label class="checkbox" id="checkall">
+        <i class="ico iconfont icon-yuanxingweixuanzhong"></i> 全选
       </label>
     </div>
 
@@ -85,15 +85,14 @@
       <label class="info mr5">
         <span>合计：</span><span class="txt-warn">￥<strong class="fs-lg">232</strong>.00</span>
       </label>
-      <button class="btn">结算</button>
+      <button class="btn" id="btn-submit">结算</button>
     </div>
   </div>
 
   <script src="../js/lib/require.js" data-main="../js/rs-config"></script>
   <script>
     require(['rs-config'], function(){
-      require(['jquery', 'app/page-main'], function($){
-        console.log($('body'));
+      require(['jquery', 'app/page-cart'], function($){
       });
     })
   </script>
