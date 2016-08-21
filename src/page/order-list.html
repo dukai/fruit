@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Hello world!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" href="../css/index.css" type="text/css">
+</head>
+<body>
+  <div class="tab">
+    <ul>
+      <li class="active"><strong>全部</strong></li>
+      <li><strong>待收货</strong></li>
+      <li><strong>已收货</strong></li>
+    </ul>
+  </div>
+  <section class="main">
+    <div class="goods clearfix ">
+      <div class="item-box">
+        <header>
+          <span class="pull-left">订单编号：160815159857</span>
+          <span class="pull-right">2016-08-15 <span class="txt-warn">待收货</span></span>
+        </header>
+        <ul>
+          <li>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <span>1</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <footer>
+          <span class="pull-right">共2个商品  实付款：<span class="txt-danger">122.00</span></span>
+        </footer>
+      </div>
+
+      <div class="item-box">
+        <header>
+          <span class="pull-left">订单编号：160815159857</span>
+          <span class="pull-right">2016-08-15 <span class="txt-warn">已收货</span></span>
+        </header>
+        <ul>
+          <li>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <span>1</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <footer>
+          <div class="row">
+            <span class="pull-right">共2个商品  实付款：<span class="txt-danger">122.00</span></span>
+          </div>
+
+          <div class="row mb5">
+            <a class="btn btn-delete pull-right">删除</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/lib/require.js" data-main="../js/rs-config"></script>
+  <script>
+    require(['rs-config'], function(){
+      require(['jquery', 'app/page-main'], function($){
+        console.log($('body'));
+      });
+    })
+  </script>
+</body>
+</html>

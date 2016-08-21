@@ -144,12 +144,18 @@ legend {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.col-offset-12 {
+  margin-left: 100%;
+}
 .col-11 {
   width: 91.66666667%;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.col-offset-11 {
+  margin-left: 91.66666667%;
 }
 .col-10 {
   width: 83.33333333%;
@@ -158,12 +164,18 @@ legend {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.col-offset-10 {
+  margin-left: 83.33333333%;
+}
 .col-9 {
   width: 75%;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.col-offset-9 {
+  margin-left: 75%;
 }
 .col-8 {
   width: 66.66666667%;
@@ -172,12 +184,18 @@ legend {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.col-offset-8 {
+  margin-left: 66.66666667%;
+}
 .col-7 {
   width: 58.33333333%;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.col-offset-7 {
+  margin-left: 58.33333333%;
 }
 .col-6 {
   width: 50%;
@@ -186,12 +204,18 @@ legend {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.col-offset-6 {
+  margin-left: 50%;
+}
 .col-5 {
   width: 41.66666667%;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.col-offset-5 {
+  margin-left: 41.66666667%;
 }
 .col-4 {
   width: 33.33333333%;
@@ -200,12 +224,18 @@ legend {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.col-offset-4 {
+  margin-left: 33.33333333%;
+}
 .col-3 {
   width: 25%;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.col-offset-3 {
+  margin-left: 25%;
 }
 .col-2 {
   width: 16.66666667%;
@@ -214,12 +244,18 @@ legend {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.col-offset-2 {
+  margin-left: 16.66666667%;
+}
 .col-1 {
   width: 8.33333333%;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.col-offset-1 {
+  margin-left: 8.33333333%;
 }
 .mr100 {
   margin-right: 100px;
@@ -726,6 +762,9 @@ body {
 .txt-warn {
   color: #f90;
 }
+.txt-danger {
+  color: #f00;
+}
 .btn {
   *display: inline;
   zoom: 1;
@@ -842,15 +881,27 @@ body {
   overflow: auto;
   height: 100%;
 }
-.main .goods .item-box header {
+.main .goods .item-box {
+  background: #fff;
+}
+.main .goods .item-box > header {
   background: #f7f7f7;
   padding: 0 10px;
   line-height: 30px;
   color: #999;
+  overflow: hidden;
 }
-.main .goods .item-box header a {
+.main .goods .item-box > header a {
   display: block;
   line-height: 30px;
+}
+.main .goods .item-box > footer {
+  background: #f7f7f7;
+  padding: 0 10px;
+  line-height: 30px;
+  color: #999;
+  overflow: hidden;
+  border-bottom: 10px solid #fff;
 }
 .main .goods .item-box ul {
   padding: 0 10px;
@@ -1054,4 +1105,125 @@ label.checkbox .ico {
 }
 label.checkbox.active .ico {
   color: #f90;
+}
+.address-box {
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background: url(../images/add-border.png) bottom repeat-x #fff;
+  background-size: auto 5px;
+}
+.address-box .ico-box {
+  width: 50px;
+  height: 60px;
+  float: left;
+}
+.address-box .ico-box .iconfont {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+  line-height: 60px;
+}
+.address-box > .pointer-box {
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  width: 40px;
+}
+.address-box .infos {
+  top: 10px;
+  left: 50px;
+  right: 50px;
+  position: absolute;
+}
+.cover {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.date-selector {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.date-selector .title {
+  background: #35cb9e;
+  height: 40px;
+  padding: 0 10px;
+}
+.date-selector .title button {
+  color: #fff;
+  height: 40px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.date-selector .title button.btn.btn-cancel {
+  float: left;
+}
+.date-selector .title button.btn.btn-done {
+  float: right;
+}
+.date-selector ul li {
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  padding: 4px 10px;
+}
+.date-selector ul li h2 {
+  font-size: 14px;
+  line-height: 18px;
+}
+.date-selector ul li p {
+  font-size: 12px;
+  line-height: 14px;
+}
+.date-selector ul li .handler {
+  line-height: 32px;
+  color: #f90;
+  display: none;
+}
+.date-selector ul li .handler.active {
+  *display: inline;
+  zoom: 1;
+  display: inline-block;
+}
+.tab {
+  height: 30px;
+  background: #fff;
+  padding-top: 4px;
+}
+.tab ul {
+  overflow: hidden;
+  margin: 0 10px;
+}
+.tab ul li {
+  float: left;
+  width: 33.33333333%;
+  text-align: center;
+}
+.tab ul li strong {
+  *display: inline;
+  zoom: 1;
+  display: inline-block;
+  line-height: 27px;
+  padding: 0 10px;
+}
+.tab ul li.active strong {
+  color: #35cb9e;
+  border-bottom: 3px solid #35cb9e;
+}
+.btn-delete {
+  *display: inline;
+  zoom: 1;
+  display: inline-block;
+  background: #fff;
+  border-radius: 3px;
+  padding: 0 20px;
 }

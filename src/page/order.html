@@ -5,38 +5,33 @@
   <title>Hello world!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
   <meta name="format-detection" content="telephone=no"/>
-  <link rel="stylesheet" href="../css/global.css" type="text/css">
   <link rel="stylesheet" href="../css/index.css" type="text/css">
 </head>
 <body>
   <section class="main">
-    <div class="goods clearfix ">
-      <div class="item-box" data-target="package">
-        <header>订单确认</header>
-        <div class="item-list">
-          <ul>
-            <li>
-              <label class="name">送货地址</label>
-              <span class="pointer">
-                <span>没有地址</span>
-                <i class="ico ico-arrow"></i>
-              </span>
-            </li>
-            <li>
-              <label class="name">配送时间</label>
-              <span class="pointer">
-                <span>周一</span>
-                <i class="ico ico-arrow"></i>
-              </span>
-            </li>
-          </ul>
-        </div>
+    <div class="address-box">
+      <div class="ico-box">
+        <div class="iconfont icon-zuobiao"></div>
       </div>
+
+      <div class="infos">
+        <div class="" style="overflow:hidden;">
+          <div class="col-6">收货人：张总</div>
+          <div class="col-6">18701338895</div>
+        </div>
+        <div class="">收货地址：北京北京市海淀区中关村街道海淀大街8号中钢国际广场11层</div>
+      </div>
+
+      <div class="pointer-box">
+        <i class="ico ico-arrow"></i>
+      </div>
+    </div>
+    <div class="goods clearfix ">
       <div class="item-box">
         <header>商品详情</header>
         <ul>
           <li>
-            <div class="img-box"></div>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
             <div class="summary">
               <div class="top">
                 <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
@@ -60,6 +55,13 @@
         <header>其他信息</header>
         <div class="item-list">
           <ul>
+            <li>
+              <label class="name">配送时间</label>
+              <span class="pointer">
+                <span>周一</span>
+                <i class="ico ico-arrow"></i>
+              </span>
+            </li>
             <li>
               <label class="name">商品总价</label>
               <span class="pointer txt-warn">￥234.00</span>
@@ -88,6 +90,54 @@
 
     <div class="pull-right">
       <button class="btn">下单</button>
+    </div>
+  </div>
+
+
+  <div class="cover">
+    <div class="date-selector">
+      <div class="title">
+        <button class="btn btn-cancel">取消</button>
+        <button class="btn btn-done">完成</button>
+      </div>
+      <ul>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler active">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 
