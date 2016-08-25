@@ -813,6 +813,18 @@ body {
   vertical-align: middle;
   line-height: 28px;
 }
+.btn.btn-green {
+  height: 40px;
+  border-radius: 3px;
+  background: #3c0;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  padding: 0 4px;
+}
+.btn.btn-green.btn-sm {
+  height: 24px;
+}
 .ico {
   *display: inline;
   zoom: 1;
@@ -1226,4 +1238,33 @@ label.checkbox.active .ico {
   background: #fff;
   border-radius: 3px;
   padding: 0 20px;
+}
+.mg40box {
+  margin: 0 40px;
+}
+.regist {
+  background: #fff;
+}
+.regist .frm {
+  padding-top: 100px;
+}
+.regist .frm .frm-group {
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+  position: relative;
+}
+.regist .frm .frm-group .btn-captcha {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.regist .frm .frm-group label {
+  color: #000;
+}
+.regist .frm .frm-group label i {
+  font-size: 24px;
+}
+.regist .frm .frm-group input {
+  font-size: 14px;
+  padding: 6px 4px;
 }

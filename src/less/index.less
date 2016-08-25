@@ -69,6 +69,19 @@ html, body{
     vertical-align: middle;
     line-height: 28px;
   }
+
+  &.btn-green{
+    height: 40px;
+    border-radius: 3px;
+    background: #3c0;
+    color: #fff;
+    border:none;
+    font-size: 14px;
+    padding: 0 4px;
+    &.btn-sm{
+      height: 24px;
+    }
+  }
 }
 
 
@@ -488,4 +501,38 @@ label.checkbox{
   background: #fff;
   border-radius: 3px;
   padding: 0 20px;
+}
+
+
+.mg40box{
+  margin: 0 40px;
+}
+
+.regist{
+  background: #fff;
+
+  .frm{
+    .pt(100px);
+    .frm-group{
+      border-bottom: 1px solid #000;
+      .mb(30px);
+      .rel;
+      .btn-captcha{
+        .abs;
+        right: 0;
+        top: 0;
+      }
+
+      label{
+        color: #000;
+        i{
+          font-size: 24px;
+        }
+      }
+      input{
+        font-size: 14px;
+        padding:6px 4px;
+      }
+    }
+  }
 }
