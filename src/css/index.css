@@ -742,6 +742,9 @@ legend {
   content: ' ';
   clear: both;
 }
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 html,
 body {
   height: 100%;
@@ -862,7 +865,11 @@ body {
   vertical-align: middle;
 }
 .main {
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
 }
 .main nav {
   width: 90px;
@@ -892,6 +899,7 @@ body {
 .main .goods {
   overflow: auto;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 .main .goods .item-box {
   background: #fff;
@@ -1228,8 +1236,8 @@ label.checkbox.active .ico {
   padding: 0 10px;
 }
 .tab ul li.active strong {
-  color: #35cb9e;
-  border-bottom: 3px solid #35cb9e;
+  color: #390;
+  border-bottom: 3px solid #390;
 }
 .btn-delete {
   *display: inline;
@@ -1267,4 +1275,6 @@ label.checkbox.active .ico {
 .regist .frm .frm-group input {
   font-size: 14px;
   padding: 6px 4px;
+  border: 0;
+  outline: none;
 }

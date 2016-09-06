@@ -1,11 +1,18 @@
 @import "global";
 
+*{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 html, body{
   height: 100%;
   font-size: 14px;
   background: #f1f1f1;
   color: #666;
   font-family: helvetica;
+}
+
+body{
 }
 
 
@@ -118,7 +125,11 @@ html, body{
 
 
 .main{
-  height:100%;
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  left: 0;
+  right: 0;
   nav{
     width: 90px;
     height: 100%;
@@ -151,6 +162,7 @@ html, body{
   .goods{
     overflow: auto;
     height: 100%;
+    -webkit-overflow-scrolling : touch;
     .item-box{
       background: #fff;
       >header{
@@ -489,8 +501,8 @@ label.checkbox{
       }
       &.active{
         strong{
-          color: #35cb9e;
-          border-bottom: 3px solid #35cb9e;
+          color: #390;
+          border-bottom: 3px solid #390;
         }
       }
     }
@@ -532,6 +544,8 @@ label.checkbox{
       input{
         font-size: 14px;
         padding:6px 4px;
+        border: 0;
+        outline: none;
       }
     }
   }
