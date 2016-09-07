@@ -1,0 +1,44 @@
+{
+  "name": "template",
+  "description": "A simple javascript template engine that support native JavaScript grammar.",
+  "version": "1.0.5",
+  "homepage": "https://github.com/dukai/template#readme",
+  "author": {
+    "name": "dukai",
+    "email": "dukai86@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dukai/template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dukai/template/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dukai/template/blob/master/LICENSE"
+    }
+  ],
+  "main": "template.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "javascript",
+    "template",
+    "tool"
+  ],
+  "dependencies": {
+    "dtools": "git+https://github.com/dukai/dtools.git"
+  }
+}

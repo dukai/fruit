@@ -42,5 +42,8 @@ define(function(require, exports, module){
 
 		localStorage.cart = JSON.stringify(cart);
 	});
-
+	$('label.checkbox').click(function(){
+        $(this).toggleClass('active');
+        $(this).find('.ico').toggleClass('icon-yuanxingxuanzhongfill icon-yuanxingweixuanzhong');
+    });
 });

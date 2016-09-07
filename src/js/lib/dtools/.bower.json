@@ -1,0 +1,30 @@
+{
+  "name": "dtools",
+  "description": "A personal tool kit for JavaScript.",
+  "main": "tools.js",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dukai/dtools",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "package.json",
+    "LICENSE-MIT",
+    "README.md"
+  ],
+  "_release": "c3ac5a012f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c3ac5a012f202dc345cd7380572e8ee04d42de99"
+  },
+  "_source": "https://github.com/dukai/dtools.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/dukai/dtools.git"
+}

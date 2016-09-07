@@ -1,0 +1,22 @@
+{
+  "name": "template",
+  "description": "A simple javascript template engine that support native JavaScript grammar.",
+  "main": "template.js",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "template",
+    "tool"
+  ],
+  "homepage": "https://github.com/dukai/template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

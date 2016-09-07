@@ -1,0 +1,21 @@
+{
+  "name": "dtools",
+  "description": "A personal tool kit for JavaScript.",
+  "main": "tools.js",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dukai/dtools",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "package.json",
+    "LICENSE-MIT",
+    "README.md"
+  ]
+}

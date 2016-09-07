@@ -1,0 +1,31 @@
+{
+  "name": "template",
+  "description": "A simple javascript template engine that support native JavaScript grammar.",
+  "main": "template.js",
+  "authors": [
+    "[object Object]"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "template",
+    "tool"
+  ],
+  "homepage": "https://github.com/dukai/template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "3e61362c65",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3e61362c653a4130eed19af085b3c6c5478f2bd7"
+  },
+  "_source": "https://github.com/dukai/template.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/dukai/template.git"
+}

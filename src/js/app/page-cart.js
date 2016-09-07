@@ -1,5 +1,6 @@
 define(function(require){
     var $ = require('jquery');
+    var popbox = require('popbox');
 
     $('.goods label.checkbox').click(function(){
         $(this).toggleClass('active');
@@ -29,6 +30,10 @@ define(function(require){
             list.push(this.dataset.pid);
         })
         console.log(list);
+    });
+
+    $('.btn').click(function(){
+        popbox.confirm('你确认要结算么');
     })
 
 });

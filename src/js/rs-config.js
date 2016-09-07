@@ -4,7 +4,10 @@ requirejs.config({
         jquery: 'lib/jquery-1.11.3.min',
         text: 'lib/text',
         moment: 'lib/moment.min',
-        'app/static-config': 'rs-config'
+        'app/static-config': 'rs-config',
+        dtools: 'lib/dtools/tools-1.0.3.min',
+        template: 'lib/template/template',
+        popbox: 'lib/popbox/popbox-0.1.0.min'
     },
     shim: {
     	'lib/jquery-scrollspy': {

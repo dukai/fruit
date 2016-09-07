@@ -1,0 +1,47 @@
+{
+  "name": "popbox",
+  "description": "popbox components.",
+  "main": "popbox.js",
+  "authors": [
+    "dukai"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "popbox",
+    "alert",
+    "box",
+    "toast",
+    "confirm",
+    "box"
+  ],
+  "homepage": "https://github.com/dukai/popbox",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test/lib/",
+    "test",
+    "tests",
+    "build.js",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "dtools": "https://github.com/dukai/dtools.git",
+    "template": "https://github.com/dukai/template.git"
+  },
+  "devDependencies": {
+    "requirejs": "^2.2.0",
+    "text": "requirejs/text#^2.0.15",
+    "jquery": "2.2.3"
+  },
+  "_release": "1f84aab1f5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1f84aab1f58b0251b8fa5691c9f31c13e09a4a10"
+  },
+  "_source": "git://github.com/dukai/popbox.git",
+  "_target": "*",
+  "_originalSource": "dukai/popbox",
+  "_direct": true
+}

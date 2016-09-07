@@ -38,6 +38,9 @@ body{
   .border-box;
   padding: 0;
   vertical-align: middle;
+  &.disabled{
+    background: #ccc !important;
+  }
   &.btn-block{
     .d-b;
     width: 100%;
@@ -48,6 +51,14 @@ body{
     .border-box;
     font-size: 16px;
     background: #f90;
+    color: #fff;
+    border:0;
+  }
+  &.btn-danger{
+    height: 40px;
+    .border-box;
+    font-size: 16px;
+    background: #f00;
     color: #fff;
     border:0;
   }
@@ -201,9 +212,11 @@ body{
 
           .checkbox{
             width: 30px;
-            height: 100px;
             .pull-left;
-            line-height: 100px;
+            &.big{
+              height: 100px;
+              line-height: 100px;
+            }
           }
 
           .img-box{
@@ -426,6 +439,7 @@ label.checkbox{
 }
 
 .cover{
+  .hidden;
   background: rgba(0, 0, 0, 0.5);
   .rect(100%);
   position: fixed;
@@ -445,6 +459,8 @@ label.checkbox{
       height: 40px;
       font-size: 14px;
       overflow: hidden;
+      background:none;
+      border:0;
       &.btn.btn-cancel{
         .pull-left;
       }
