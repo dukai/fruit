@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Hello world!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="stylesheet" href="../css/index.css" type="text/css">
+</head>
+<body>
+  <div class="fixed-header clearfix">
+    <div class="pull-left">订单编号：56112255112</div>
+    <div class="pull-right">已完成</div>
+  </div>
+  <section class="main" style="top: 40px;overflow:auto;">
+    <div class="address-box">
+      <div class="ico-box">
+        <div class="iconfont icon-zuobiao"></div>
+      </div>
+
+      <div class="infos">
+        <div class="" style="overflow:hidden;">
+          <div class="col-6">收货人：张总</div>
+          <div class="col-6">18701338895</div>
+        </div>
+        <div class="">收货地址：北京北京市海淀区中关村街道海淀大街8号中钢国际广场11层</div>
+      </div>
+
+      <div class="pointer-box">
+        <i class="ico ico-arrow"></i>
+      </div>
+    </div>
+    <div class="goods clearfix ">
+      <div class="item-box">
+        <header>商品详情</header>
+        <ul>
+          <li>
+            <div class="img-box"><img src="../images/products/qiyi.jpg"></div>
+            <div class="summary">
+              <div class="top">
+                <h2>新鲜的奇异果啊，快来看啊，好吃不贵</h2>
+                <p>1盒12个</p>
+              </div>
+
+              <div class="bar">
+                <div class="pull-left">
+                  <strong class="price">￥<em>68</em>.00</strong>
+                </div>
+                <div class="pull-right">
+                  <span>1</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="item-box">
+        <header>其他信息</header>
+        <div class="item-list">
+          <ul>
+            <li>
+              <label class="name">配送时间</label>
+              <span class="pointer">
+                <span>周一</span>
+                <i class="ico ico-arrow"></i>
+              </span>
+            </li>
+            <li>
+              <label class="name">商品总价</label>
+              <span class="pointer txt-warn">￥234.00</span>
+            </li>
+            <li>
+              <label class="name">运费</label>
+              <span class="pointer">￥4.00</span>
+            </li>
+            <li>
+              <label class="name">优惠</label>
+              <span class="pointer txt-warn">￥-20.00</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="check-bar">
+    <div class="pull-left ml15">
+      <label class="info">
+        <span>合计：</span><span class="txt-warn">￥<strong class="fs-lg">232</strong>.00</span>
+      </label>
+    </div>
+
+
+    <div class="pull-right">
+      <button class="btn">下单</button>
+    </div>
+  </div>
+
+
+  <div class="cover">
+    <div class="date-selector">
+      <div class="title">
+        <button class="btn btn-cancel">取消</button>
+        <button class="btn btn-done">完成</button>
+      </div>
+      <ul>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler active">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+        <li>
+          <div class="pull-left">
+            <h2>8-15  周一</h2>
+            <p>09：00-18：00</p>
+          </div>
+          <div class="pull-right handler">
+            <i class="iconfont icon-yuanxingxuanzhongfill"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../js/lib/require.js" data-main="../js/rs-config"></script>
+  <script>
+    require(['rs-config'], function(){
+      require(['jquery', 'app/page-main'], function($){
+        console.log($('body'));
+      });
+    })
+  </script>
+</body>
+</html>
