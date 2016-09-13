@@ -46,4 +46,8 @@ define(function(require, exports, module){
         $(this).toggleClass('active');
         $(this).find('.ico').toggleClass('icon-yuanxingxuanzhongfill icon-yuanxingweixuanzhong');
     });
+
+    $('.tab-bar li:eq(2)').click(function(){
+    	$('.tab-bar .popmenu').toggle();
+    })
 });

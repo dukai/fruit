@@ -352,6 +352,7 @@ body{
   left: 0;
   ul{
     li{
+      .rel;
       width: percentage(1/3);
       .pull-left;
       text-align: center;
@@ -586,4 +587,53 @@ label.checkbox{
   border-bottom: 1px solid #eee;
   line-height: 30px;
   padding: 0 10px;
+}
+
+.popmenu{
+  .hidden;
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  .abs;
+  bottom: 60px;
+  left: 50%;
+  .ml(-50px);
+  background:#fff;
+  .conner{
+    .rect(0);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccc;
+    .abs;
+    bottom: -10px;
+    left: 50%;
+    .ml(-10px);
+    &:after{
+      content: " ";
+      .d-b;
+      .rect(0);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fff;
+      .abs;
+      bottom: 1px;
+      left: -10px;
+    }
+  }
+  ul{
+    li{
+      float: none;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      line-height: 30px;
+
+      &:nth-last-child(1){
+        border-bottom: 0;
+      }
+      a{
+        text-decoration: none;
+        color: #999;
+      }
+    }
+  }
 }

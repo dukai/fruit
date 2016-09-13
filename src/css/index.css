@@ -1411,6 +1411,7 @@ body {
   left: 0;
 }
 .tab-bar ul li {
+  position: relative;
   width: 33.33333333%;
   float: left;
   text-align: center;
@@ -1628,4 +1629,51 @@ label.checkbox.active .ico {
   border-bottom: 1px solid #eee;
   line-height: 30px;
   padding: 0 10px;
+}
+.popmenu {
+  display: none;
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -50px;
+  background: #fff;
+}
+.popmenu .conner {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ccc;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+}
+.popmenu .conner:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  position: absolute;
+  bottom: 1px;
+  left: -10px;
+}
+.popmenu ul li {
+  float: none;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  line-height: 30px;
+}
+.popmenu ul li:nth-last-child(1) {
+  border-bottom: 0;
+}
+.popmenu ul li a {
+  text-decoration: none;
+  color: #999;
 }
